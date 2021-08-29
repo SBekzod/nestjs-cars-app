@@ -4,7 +4,8 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { DatabaseModule } from './database/database.module';
 import { GraphQLModule } from '@nestjs/graphql';
-import { CarsModule } from './cars/cars.module';
+import { CarsModule } from './components/cars/cars.module';
+import { ComponentsModule } from './components/components.module';
 
 @Module({
   imports: [
@@ -15,7 +16,7 @@ import { CarsModule } from './cars/cars.module';
       debug: true,
       autoSchemaFile: true,
     }),
-    CarsModule,
+    ComponentsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -7,6 +7,6 @@ export class CarsResolvers {
 
   @Query((returns) => String)
   public async cars() {
-    return 'Hello and welcome to Yourcar shop!';
+    return 'This is the Query of cars';
   }
 }

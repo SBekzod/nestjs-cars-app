@@ -1,5 +1,4 @@
 import { Field, ObjectType } from '@nestjs/graphql';
-import { StringValueNode } from 'graphql';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'cars' })
@@ -9,7 +8,7 @@ export class Car {
   @Field()
   id: string;
 
-  @Column()
+  @Column({unique: true})
   @Field()
   name: string;
 

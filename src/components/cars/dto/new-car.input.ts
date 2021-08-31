@@ -16,7 +16,7 @@ export class NewCarInput {
 
   @Field()
   mileage: string;
-
+  
   @Field()
   gas: string;
 

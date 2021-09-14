@@ -7,6 +7,7 @@ export class AppController {
 
   @Get()
   getHello(): string {
+    console.log('rest api - get')
     return this.appService.getHello();
   }
 }
